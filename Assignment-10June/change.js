@@ -14,7 +14,6 @@ const change = function (src, imgId) {
     sideBarDiv[k].classList.remove("blue"); // remove blue bg color class from all other nodes in sideBarDiv
   }
   parent.classList.add("blue"); // add blue color class to the clicked image class
-  //console.log(parent.id);
-  document.getElementById("main").src = src; // replace main image by the clicked image
-  document.getElementById("mainFigCap").innerHTML = imgInfo[iter].title;
+
+  setMainImg(src, imgInfo[iter].title);
 };

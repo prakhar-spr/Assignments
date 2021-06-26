@@ -13,14 +13,11 @@ function renderThumbnail(infoArray, parentDiv) {
     sideCap.classList.add("desc");
     sideCap.innerHTML = element.title;
     sideDiv.append(sideCap); // appending p tag to divison
-    // sideDiv.setAttribute(
-    //   "onclick",
-    //   "change(this.firstChild.src, this.firstChild.id)"
-    // );
-    // sideDiv.addEventListener(
-    //   "click",
-    //   change(sideDiv.firstChild.src, sideDiv.firstChild.id)
-    // );
+    sideDiv.setAttribute(
+      "onclick",
+      "change(this.firstChild.src, this.firstChild.id)"
+    );
+
     parentDiv.append(sideDiv); // appending the new divison to its parent divison.
   });
 }
